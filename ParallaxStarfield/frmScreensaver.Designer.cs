@@ -1,6 +1,6 @@
 ﻿namespace ParallaxStarfield
 {
-    partial class Form1
+    partial class frmScreensaver
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmScreensaver
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmScreensaver";
+            this.Text = "frmScreensaver";
+            this.Load += new System.EventHandler(this.frmScreensaver_Load);
+            this.Click += new System.EventHandler(this.frmScreensaver_Click);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmScreensaver_Paint);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmScreensaver_KeyPress);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmScreensaver_MouseMove);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
